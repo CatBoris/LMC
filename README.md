@@ -80,9 +80,9 @@ Modification
  - Датапикер [<https://github.com/dbushell/Pikaday>]
  - Слайдер [<https://github.com/nolimits4web/Swiper>]
  - Рейтинг [<https://github.com/wbotelhos/raty>]
- - 
+
  
-```sh
+
 
 [
   {
@@ -90,8 +90,8 @@ Modification
     listPlugins: [
       {
         title: "jQueryFormStyler",
-        description: "",
-        link: "https://github.com/Dimox/jQueryFormStyler"
+        link: "https://github.com/Dimox/jQueryFormStyler",
+        description: ""
       }
     ]
   },
@@ -100,11 +100,11 @@ Modification
     listPlugins: [
       {
         title: "Nicescroll",
-        description: "",
-        link: "https://github.com/inuyaksa/jquery.nicescroll"
+        link: "https://github.com/inuyaksa/jquery.nicescroll",
+        description: ""
       }
     ]
   }
 ]
 
-```
+
