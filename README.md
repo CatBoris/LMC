@@ -80,3 +80,18 @@ Modification
  - Датапикер [<https://github.com/dbushell/Pikaday>]
  - Слайдер [<https://github.com/nolimits4web/Swiper>]
  - Рейтинг [<https://github.com/wbotelhos/raty>]
+ - 
+ 
+```sh
+{
+  category: "Стилизация форм",
+  {
+    name: "jQueryFormStyler",
+    link: "https://github.com/Dimox/jQueryFormStyler"
+  }
+},
+{
+
+}
+
+```
