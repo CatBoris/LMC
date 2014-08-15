@@ -87,7 +87,7 @@ Modification
   category: "Стилизация форм",
   {
     name: "jQueryFormStyler",
-    link: "https://github.com/Dimox/jQueryFormStyler"
+    link: [<"https://github.com/Dimox/jQueryFormStyler">]
   }
 },
 {
