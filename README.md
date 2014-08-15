@@ -72,16 +72,9 @@ Modification
 
 
 
-Ссылки на частоиспользуемые плагины:
+Список частоиспользуемых плагинов:
 ------------------------------------
- - Стилизация форм [<https://github.com/Dimox/jQueryFormStyler>]
- - Кастомизация скролла [<https://github.com/inuyaksa/jquery.nicescroll>]
- - Скролл эффекты [<https://github.com/chayka/jQuery.Scroolly>]
- - Датапикер [<https://github.com/dbushell/Pikaday>]
- - Слайдер [<https://github.com/nolimits4web/Swiper>]
- - Рейтинг [<https://github.com/wbotelhos/raty>]
 
- 
 ```sh
 
 [
