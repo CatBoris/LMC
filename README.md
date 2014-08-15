@@ -104,6 +104,51 @@ Modification
         description: ""
       }
     ]
+  },
+  {
+    category: "Скролл эффекты",
+    listPlugins: [
+      {
+        title: "Scroolly",
+        link: "https://github.com/chayka/jQuery.Scroolly",
+        description: ""
+      }
+    ]
+  },
+  {
+    category: "Датапикеры",
+    listPlugins: [
+      {
+        title: "Pikaday",
+        link: "https://github.com/dbushell/Pikaday",
+        description: ""
+      },
+      {
+        title: "Pikadate",
+        link: "https://github.com/amsul/pickadate.js",
+        description: "ie9+"
+      }
+    ]
+  },
+  {
+    category: "Слайдеры",
+    listPlugins: [
+      {
+        title: "Swiper",
+        link: "https://github.com/nolimits4web/Swiper",
+        description: ""
+      }
+    ]
+  },
+  {
+    category: "Рейтинги",
+    listPlugins: [
+      {
+        title: "Raty",
+        link: "https://github.com/wbotelhos/raty",
+        description: ""
+      }
+    ]
   }
 ]
 
