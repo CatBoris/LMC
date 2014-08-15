@@ -14,7 +14,7 @@ LMC Методология
   - Слой компонентов (component)
   - Слой модификаций
 
-<img src="wiki/flat.png" alt="">
+![](wiki/flat.png)
 
 Base
 ----
@@ -23,7 +23,7 @@ Base
   - конфигураци, миксины, функции, переменные sass и compass
   - стили для общих элементов без классов и id ( html, body, a, ul, etc. );
 
-<img src="wiki/base.png" alt=""> 
+![](wiki/base.png)
 
 
 Layout
@@ -33,7 +33,7 @@ Layout
       etc. ).
   - классы начинаются с префикса ".l-";
 
-<img src="wiki/layout.png" alt="">
+![](wiki/layout.png)
 
 
 
@@ -47,7 +47,7 @@ Module
       символом тире "-" ( .m-reg-form, .m-shopping-cart, etc. );
   - имя подмодуля составляется из имени модуля + символ нижнего подчеркивания "_" + имя подмодуля (.m-form_item)
 
-<img src="wiki/module.png" alt="">
+![](wiki/module.png)
 
 
 Component
@@ -56,7 +56,7 @@ Component
   - наименьшие целостные элементы страницы (.c-input, .c-button, .c-dropdown-menu, .c-select);
   - классы начинаются с префикса ".с-";
 
-<img src="wiki/component.png" alt="">
+![](wiki/component.png)
 
 
 Modification
@@ -66,10 +66,16 @@ Modification
   - классы начинаются с префикса ".__";
 
 
-<img src="wiki/all.png" height="788" width="682" alt="">
+![](wiki/all.png)
 
 
 
 
 Ссылки на частоиспользуемые плагины:
 ------------------------------------
+ - Стилизация форм [<https://github.com/Dimox/jQueryFormStyler>]
+ - Кастомизация скролла [<https://github.com/inuyaksa/jquery.nicescroll>]
+ - Скролл эффекты [<https://github.com/chayka/jQuery.Scroolly>]
+ - Датапикер [<https://github.com/dbushell/Pikaday>]
+ - Слайдер [<https://github.com/nolimits4web/Swiper>]
+ - Рейтинг [<https://github.com/wbotelhos/raty>]
