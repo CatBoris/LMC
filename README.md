@@ -83,15 +83,28 @@ Modification
  - 
  
 ```sh
-{
-  category: "Стилизация форм",
-  {
-    name: "jQueryFormStyler",
-    link: [<"https://github.com/Dimox/jQueryFormStyler">]
-  }
-},
-{
 
-}
+[
+  {
+    category: "Стилизация форм",
+    listPlugins: [
+      {
+        title: "jQueryFormStyler",
+        description: "",
+        link: "https://github.com/Dimox/jQueryFormStyler"
+      }
+    ]
+  },
+  {
+    category: "Кастомизация скролла",
+    listPlugins: [
+      {
+        title: "Nicescroll",
+        description: "",
+        link: "https://github.com/inuyaksa/jquery.nicescroll"
+      }
+    ]
+  }
+]
 
 ```
