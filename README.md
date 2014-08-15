@@ -82,7 +82,7 @@ Modification
  - Рейтинг [<https://github.com/wbotelhos/raty>]
 
  
-
+```sh
 
 [
   {
@@ -108,3 +108,4 @@ Modification
 ]
 
 
+```
