@@ -1,5 +1,5 @@
 
-LMC Методология
+LMM Методология
 ===============
 > ***layout module modificator***
 
