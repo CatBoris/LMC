@@ -14,7 +14,7 @@ LMM Методология
   - Слой модулей (module)
   - Модификации
 
-![](wiki/flat.png)
+![](https://dl.dropboxusercontent.com/u/80313909/github/flat.png)
 
 Base
 ----
@@ -23,7 +23,7 @@ Base
   - конфигураци, миксины, функции, переменные sass и compass
   - стили для общих элементов без классов и id ( html, body, a, ul, etc. );
 
-![](wiki/base.png)
+![](https://dl.dropboxusercontent.com/u/80313909/github/base.png)
 
 
 Layout
@@ -33,7 +33,7 @@ Layout
       etc. ).
   - классы начинаются с префикса ".l-";
 
-![](wiki/layout.png)
+![](https://dl.dropboxusercontent.com/u/80313909/github/layout.png)
 
 
 
@@ -46,7 +46,7 @@ Module
   - имя модуля состоящего из более чем 1-го слова разделяются
       символом тире "-" ( .m-reg-form, .m-shopping-cart, etc. );
 
-![](wiki/module.png)
+![](https://dl.dropboxusercontent.com/u/80313909/github/module.png)
 
 
 Sub-module
@@ -54,7 +54,7 @@ Sub-module
 
   - имя подмодуля составляется из имени модуля + символ нижнего подчеркивания "_" + имя подмодуля (.m-form_item)
 
-![](wiki/component.png)
+![](https://dl.dropboxusercontent.com/u/80313909/github/component.png)
 
 
 Modification
@@ -64,7 +64,7 @@ Modification
   - классы начинаются с префикса ".__";
 
 
-<img src="wiki/all.png" alt="">
+![](https://dl.dropboxusercontent.com/u/80313909/github/all.png)
 
 
 
