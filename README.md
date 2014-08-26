@@ -188,7 +188,7 @@ Sublime:
 Sublime snippets
 ----------------
 
-comments
+**Comments**
 
 ```sh
 <snippet>
@@ -204,7 +204,7 @@ comments
 </snippet>
 ```
 
-comments with div
+**Comments with div**
 
 ```sh
 <snippet>
@@ -222,7 +222,7 @@ comments with div
 </snippet>
 ```
 
-comments with custom tag
+**Comments with custom tag**
 
 ```sh
 <snippet>
