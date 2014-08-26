@@ -196,11 +196,6 @@ Sublime packages
     title: "Syntax Highlighting for Sass",
     link: "https://github.com/P233/Syntax-highlighting-for-Sass",
     description: "Подсветка синтаксиса Sass и SCSS"
-  },
-  {
-    title: "SublimeCodeIntel",
-    link: "https://github.com/SublimeCodeIntel/SublimeCodeIntel",
-    description: "Умное автодополнение"
   }
 ]
 
