@@ -10,7 +10,7 @@ LMM Методология
  - [Javascript Plugins] (#plugins)
  - [Sublime text] (#sublime)
 
-Structure:
+Structure
 ---------
 
   - Базовый слой (base)
@@ -73,7 +73,7 @@ Modification
 
 
 
-Plugins:
+Plugins
 ========
 
 ```sh
@@ -148,8 +148,11 @@ Plugins:
 
 
 ```
-Sublime:
+Sublime
 ========
+
+Sublime packages
+----------------
 
 ```sh
 
