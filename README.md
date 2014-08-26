@@ -160,27 +160,27 @@ Sublime packages
   {
     title: "Emmet",
     link: "https://github.com/sergeche/emmet-sublime",
-    description: "ускорение работы с HTML и CSS"
+    description: "Ускорение работы с HTML и CSS"
   },
   {
     title: "AutoFileName",
     link: "https://github.com/BoundInCode/AutoFileName",
-    description: "автокомплит для путей и файлов"
+    description: "Автокомплит для путей и файлов"
   },
   {
     title: "Nettuts-Fetch",
     link: "https://github.com/weslly/Nettuts-Fetch",
-    description: "скачивание файлов с удаленного репозитория"
+    description: "Скачивание файлов с удаленного репозитория"
   },
   {
     title: "SideBarEnhancements",
     link: "https://github.com/titoBouzout/SideBarEnhancements",
-    description: "расширяет функционал боковой панели"
+    description: "Расширяет функционал боковой панели"
   },
   {
     title: "SublimeGit",
     link: "https://sublimegit.net",
-    description: "интеграция гита в sublime"
+    description: "Интеграция гита в sublime"
   },
   {
     title: "theme-spacegray",
@@ -190,15 +190,19 @@ Sublime packages
   {
     title: "LiveStyle",
     link: "http://livestyle.emmet.io",
-    description: "двунаправленное редактирование css"
+    description: "Двунаправленное редактирование css"
   },
   {
     title: "Syntax Highlighting for Sass",
     link: "https://github.com/P233/Syntax-highlighting-for-Sass",
     description: "Подсветка синтаксиса Sass и SCSS"
+  },
+  {
+    title: "SublimeCodeIntel",
+    link: "https://github.com/SublimeCodeIntel/SublimeCodeIntel",
+    description: "Умное автодополнение"
   }
 ]
-
 
 ```
 
