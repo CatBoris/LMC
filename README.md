@@ -175,11 +175,6 @@ Sublime:
     description: "расширяет функционал боковой панели"
   },
   {
-    title: "AdvancedNewFile",
-    link: "https://github.com/skuroda/Sublime-AdvancedNewFile",
-    description: "расширяет функционал создания нового файла"
-  },
-  {
     title: "theme-spacegray",
     link: "https://github.com/kkga/spacegray",
     description: "Тема для sublime text"
