@@ -7,8 +7,9 @@ LMM Методология
 > и переиспользование блоков верстки.
 
  - [Методология] (#structure)
- - [Часто используемые плагины] (https://github.com/CatBoris/LMM#plugins)
- - [Sublime text packages] (https://github.com/CatBoris/LMM#sublime)
+ - [Javascript Plugins] (#plugins)
+ - [Sublime text packages] (#sublime)
+
 Structure:
 ---------
 
