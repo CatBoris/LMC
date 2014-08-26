@@ -8,7 +8,7 @@ LMM Методология
 
  - [Методология] (#structure)
  - [Javascript Plugins] (#plugins)
- - [Sublime text packages] (#sublime)
+ - [Sublime text] (#sublime)
 
 Structure:
 ---------
@@ -74,7 +74,7 @@ Modification
 
 
 Plugins:
-------------------------------------
+--------
 
 ```sh
 
@@ -144,6 +144,37 @@ Plugins:
       }
     ]
   }
+]
+
+
+```
+Sublime:
+--------
+
+```sh
+
+[
+  {
+    title: "Emmet",
+    link: "https://github.com/sergeche/emmet-sublime",
+    description: ""
+  },
+  {
+    title: "AutoFileName",
+    link: "https://github.com/BoundInCode/AutoFileName",
+    description: ""
+  },
+  {
+    title: "Nettuts-Fetch",
+    link: "https://github.com/weslly/Nettuts-Fetch",
+    description: ""
+  },
+  {
+    title: "AdvancedNewFile",
+    link: "https://github.com/skuroda/Sublime-AdvancedNewFile",
+    description: ""
+  },
+
 ]
 
 
