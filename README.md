@@ -74,7 +74,7 @@ Modification
 
 
 Plugins:
---------
+========
 
 ```sh
 
@@ -149,7 +149,7 @@ Plugins:
 
 ```
 Sublime:
---------
+========
 
 ```sh
 
@@ -170,6 +170,11 @@ Sublime:
     description: ""
   },
   {
+    title: "SideBarEnhancements",
+    link: "https://github.com/titoBouzout/SideBarEnhancements",
+    description: ""
+  },
+  {
     title: "AdvancedNewFile",
     link: "https://github.com/skuroda/Sublime-AdvancedNewFile",
     description: ""
@@ -178,4 +183,59 @@ Sublime:
 ]
 
 
+```
+
+Sublime snippets
+----------------
+
+comments
+
+```sh
+<snippet>
+  <content><![CDATA[
+<!-- BEGIN $1  -->
+  $2
+<!-- END $1 -->
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>co</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>text.html</scope>
+</snippet>
+```
+
+comments with div
+
+```sh
+<snippet>
+	<content><![CDATA[
+<!-- BEGIN $1  -->
+<div class="$1">
+	$2
+</div>
+<!-- END $1 -->
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>di</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html</scope>
+</snippet>
+```
+
+comments with custom tag
+
+```sh
+<snippet>
+	<content><![CDATA[
+<!-- BEGIN $1  -->
+<$2 class="$1">
+	$3
+</$2>
+<!-- END $1 -->
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>du</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html</scope>
+</snippet>
 ```
