@@ -175,6 +175,11 @@ Sublime:
     description: "расширяет функционал боковой панели"
   },
   {
+    title: "SublimeGit",
+    link: "https://sublimegit.net",
+    description: "интеграция гита в sublime"
+  },
+  {
     title: "theme-spacegray",
     link: "https://github.com/kkga/spacegray",
     description: "Тема для sublime text"
@@ -187,6 +192,18 @@ Sublime:
 Sublime snippets
 ----------------
 
+**Placehold.it**
+
+```sh
+<snippet>
+  <content><![CDATA[
+http://placehold.it/${1:300}x${2:300}
+]]></content>
+  <tabTrigger>ph</tabTrigger>
+  <scope>text.html</scope>
+</snippet>
+```
+
 **Comments**
 
 ```sh
@@ -196,9 +213,7 @@ Sublime snippets
   $2
 <!-- END $1 -->
 ]]></content>
-  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>co</tabTrigger>
-  <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <scope>text.html</scope>
 </snippet>
 ```
@@ -209,32 +224,25 @@ Sublime snippets
 <snippet>
 	<content><![CDATA[
 <!-- BEGIN $1  -->
-<div class="$1">
-	$2
-</div>
+<${2:div} class="$1">
+	$3
+</${2:div} >
 <!-- END $1 -->
 ]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>di</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>text.html</scope>
 </snippet>
 ```
 
-**Comments with custom tag**
-
+Sublime config
+----------------
 ```sh
-<snippet>
-	<content><![CDATA[
-<!-- BEGIN $1  -->
-<$2 class="$1">
-	$3
-</$2>
-<!-- END $1 -->
-]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>du</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>text.html</scope>
-</snippet>
+{
+	"draw_white_space": "all",
+	"translate_tabs_to_spaces": true,
+	"tab_size": 2,
+	"ignored_packages":[],
+	"theme": "Spacegray.sublime-theme"
+}
+
 ```
