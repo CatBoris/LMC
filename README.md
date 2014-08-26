@@ -183,6 +183,16 @@ Sublime:
     title: "theme-spacegray",
     link: "https://github.com/kkga/spacegray",
     description: "Тема для sublime text"
+  },
+  {
+    title: "LiveStyle",
+    link: "http://livestyle.emmet.io",
+    description: "двунаправленное редактирование css"
+  },
+  {
+    title: "Syntax Highlighting for Sass",
+    link: "https://github.com/P233/Syntax-highlighting-for-Sass",
+    description: "Подсветка синтаксиса Sass и SCSS"
   }
 ]
 
