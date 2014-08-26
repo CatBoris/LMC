@@ -6,9 +6,9 @@ LMM Методология
 > Принципом методологии является максимальная модульность, независимость
 > и переиспользование блоков верстки.
 
- - [Методология] (https://github.com/CatBoris/LMM#structure)
- - [Плагины] (https://github.com/CatBoris/LMM#plugins)
- 
+ - [Методология] (#structure)
+ - [Часто используемые плагины] (https://github.com/CatBoris/LMM#plugins)
+ - [Sublime text packages] (https://github.com/CatBoris/LMM#sublime)
 Structure:
 ---------
 
