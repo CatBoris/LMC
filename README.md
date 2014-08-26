@@ -157,29 +157,33 @@ Sublime:
   {
     title: "Emmet",
     link: "https://github.com/sergeche/emmet-sublime",
-    description: ""
+    description: "ускорение работы с HTML и CSS"
   },
   {
     title: "AutoFileName",
     link: "https://github.com/BoundInCode/AutoFileName",
-    description: ""
+    description: "автокомплит для путей и файлов"
   },
   {
     title: "Nettuts-Fetch",
     link: "https://github.com/weslly/Nettuts-Fetch",
-    description: ""
+    description: "скачивание файлов с удаленного репозитория"
   },
   {
     title: "SideBarEnhancements",
     link: "https://github.com/titoBouzout/SideBarEnhancements",
-    description: ""
+    description: "расширяет функционал боковой панели"
   },
   {
     title: "AdvancedNewFile",
     link: "https://github.com/skuroda/Sublime-AdvancedNewFile",
-    description: ""
+    description: "расширяет функционал создания нового файла"
   },
-
+  {
+    title: "theme-spacegray",
+    link: "https://github.com/kkga/spacegray",
+    description: "Тема для sublime text"
+  }
 ]
 
 
