@@ -193,9 +193,9 @@ Sublime packages
     description: "Двунаправленное редактирование css"
   },
   {
-    title: "Syntax Highlighting for Sass",
-    link: "https://github.com/P233/Syntax-highlighting-for-Sass",
-    description: "Подсветка синтаксиса Sass и SCSS"
+    title: "SCSS",
+    link: "https://github.com/MarioRicalde/SCSS.tmbundle",
+    description: "Подсветка синтаксиса SCSS и автокомплит"
   }
 ]
 
