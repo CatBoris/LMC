@@ -20,11 +20,7 @@ $total-width: gridsystem-width($columns);
 @include establish-baseline;
 
 // Font-Face
-// @include font-face( "font-name", font-files(
-//  "font-folder/font-filename.woff",woff,
-//  "font-folder/font-filename.ttf",truetype, 
-//  "font-folder/font-filename.svg",svg
-//  ),"font-folder/font-filename.eot", bold, italic);
+//@include font-face($font-folder, $font-filename, $font-weight, $font-style);
 
 // Function
 @function gridsystem-width($columns:$columns) {
@@ -78,10 +74,70 @@ $total-width: gridsystem-width($columns);
   &:-moz-placeholder           {@content;}
   &::-moz-placeholder          {@content;}
   &:-ms-input-placeholder      {@content;}
+  &::placeholder               {@content;}
 }
 
 @mixin font($font-size) {
   @include adjust-font-size-to($font-size);
+}
+
+@mixin media($media-width){
+  @media screen and (max-width: $media-width){
+    @content;
+  }
+}
+
+@mixin font-face($font-folder, $font-filename, $font-weight: normal, $font-style: normal){
+  @include font-face( "font-name", font-files(
+  $font-folder + "/" + $font-filename + ".woff", woff,
+  $font-folder + "/" + $font-filename + ".ttf", truetype, 
+  $font-folder + "/" + $font-filename + ".svg", svg
+  ), $font-folder + "/" + $font-filename +".eot", $font-weight, $font-style);
+}
+
+@mixin font-smoothing($val: antialiased){
+  -webkit-font-smoothing: $val;
+  -moz-font-smoothing: $val;
+  -ms-font-smoothing: $val;
+  -o-font-smoothing: $val;
+}
+
+@mixin arrow($width, $height, $background, $direction){
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  @if $direction == top{
+    border-width: 0 $width / 2 + px $height + px $width / 2 + px;
+    border-color: transparent transparent $background transparent;
+  }
+  @if $direction == right{
+    border-width: $height / 2 + px 0 $height / 2 + px $width + px;
+    border-color: transparent transparent transparent $background;
+  }
+  @if $direction == bottom{
+    border-width: $height + px $width / 2 + px 0 $width / 2 + px;
+    border-color: $background transparent transparent transparent;
+  }
+  @if $direction == left{
+    border-width: $height / 2 + px $width + px $height / 2 + px 0;
+    border-color: transparent $background transparent transparent;
+  }
+  @if $direction == top-left{
+    border-width: $height + px $width + px 0 0;
+    border-color: $background transparent transparent transparent;
+  }
+  @if $direction == top-right{
+    border-width: 0 $width + px $height + px 0;
+    border-color: transparent $background transparent transparent;
+  }
+  @if $direction == bottom-right{
+    border-width: 0 0 $height + px $width + px;
+    border-color: transparent transparent $background transparent;
+  }
+  @if $direction == bottom-left{
+    border-width: $width + px 0 0 $height + px;
+    border-color: transparent transparent transparent $background;
+  }
 }
 
 // Base style
@@ -89,7 +145,7 @@ html{
   height: 100%;
 }
 body{
-  @include clearfix();
+  @include font-smoothing;
   width: 100%;
   height: 100%;
   min-height: 100%;
