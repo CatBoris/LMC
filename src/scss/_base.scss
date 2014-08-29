@@ -62,8 +62,12 @@ $total-width: gridsystem-width($columns);
   margin-right: $total-width*((($gutter-width+$column-width)*$offset) / gridsystem-width($columns)) + $total-width*(($gutter-width*.5)/gridsystem-width($columns));
 }
 
-@mixin icon($icon-name, $position: absolute){
+@mixin icon($icon-name, $position: absolute, $content: true){
+  @if $content == true {
+    content: "";
+  }
   position: $position;
+  display: inline-block;
   background-image: sprite-url($icons);
   background-position: sprite-position($icons, $icon-name);
   @include sprite-dimensions($icons, $icon-name);
