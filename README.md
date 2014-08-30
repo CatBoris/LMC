@@ -173,6 +173,11 @@ Sublime packages
     description: "Ускорение работы с HTML и CSS"
   },
   {
+    title: "BracketHighlighter",
+    link: "https://github.com/facelessuser/BracketHighlighter",
+    description: "Подсветка скобок и тэгов"
+  },
+  {
     title: "AutoFileName",
     link: "https://github.com/BoundInCode/AutoFileName",
     description: "Автокомплит для путей и файлов"
