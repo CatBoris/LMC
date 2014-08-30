@@ -80,6 +80,16 @@ Plugins
 
 [
   {
+    category: "Загрузка ресурсов",
+    listPlugins: [
+      {
+        title: "Head.js",
+        link: "https://github.com/headjs/headjs",
+        description: ""
+      }
+    ]
+  },
+  {
     category: "Стилизация форм",
     listPlugins: [
       {
