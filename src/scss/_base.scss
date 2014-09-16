@@ -2,11 +2,6 @@
 @import 'compass/reset';
 
 // Configs
-$base-font-size: 16px ;
-$base-line-height: 24px;
-$rhythm-unit: 'rem';
-$rem-with-px-fallback: true;
-
 $total-width: 100%;
 $column-width: 60px;
 $gutter-width: 0px;
@@ -16,19 +11,13 @@ $columns: 12;
 //$icons: sprite-map("icons/*.png", $spacing: 10px, $layout: vertical);
 $total-width: gridsystem-width($columns);
 
-// Vertical Rhythm
-@include establish-baseline;
-
-// Font-Face
-//@include font-face($font-folder, $font-filename, $font-weight, $font-style);
-
 // Function
-@function gridsystem-width($columns:$columns) {
+@function gridsystem-width($columns:$columns){
   @return ($column-width * $columns) + ($gutter-width * $columns);
 }
 
 // Mixins
-@mixin clearfix() {
+@mixin clearfix(){
   *zoom:1;
   &:before,
   &:after {
@@ -40,25 +29,25 @@ $total-width: gridsystem-width($columns);
   }
 }
 
-@mixin row($columns:$columns) {
+@mixin row($columns:$columns){
   display: block;
   width: $total-width*(($gutter-width + gridsystem-width($columns))/gridsystem-width($columns));
   margin: 0 $total-width*((($gutter-width*.5)/gridsystem-width($columns))*-1);
   @include clearfix();
 }
 
-@mixin column($x,$columns:$columns) {
+@mixin column($x,$columns:$columns){
   display: inline;
   float: left;
   width: $total-width*(((($gutter-width+$column-width)*$x)-$gutter-width) / gridsystem-width($columns));
   margin: 0 $total-width*(($gutter-width*.5)/gridsystem-width($columns));
 }
 
-@mixin push($offset:1) {
+@mixin push($offset:1){
   margin-left: $total-width*((($gutter-width+$column-width)*$offset) / gridsystem-width($columns)) + $total-width*(($gutter-width*.5)/gridsystem-width($columns));
 }
 
-@mixin pull($offset:1) {
+@mixin pull($offset:1){
   margin-right: $total-width*((($gutter-width+$column-width)*$offset) / gridsystem-width($columns)) + $total-width*(($gutter-width*.5)/gridsystem-width($columns));
 }
 
@@ -73,7 +62,7 @@ $total-width: gridsystem-width($columns);
   @include sprite-dimensions($icons, $icon-name);
 }
 
-@mixin placeholder {
+@mixin placeholder{
   &::-webkit-input-placeholder {@content;}
   &:-moz-placeholder           {@content;}
   &::-moz-placeholder          {@content;}
@@ -81,8 +70,9 @@ $total-width: gridsystem-width($columns);
   &::placeholder               {@content;}
 }
 
-@mixin font($font-size) {
-  @include adjust-font-size-to($font-size);
+@mixin font($font-size){
+  font-size: $font-size + px;
+  font-size: $font-size / 10 + rem;
 }
 
 @mixin media($media-width){
@@ -91,8 +81,8 @@ $total-width: gridsystem-width($columns);
   }
 }
 
-@mixin font-face($font-folder, $font-filename, $font-weight: normal, $font-style: normal){
-  @include font-face( "font-name", font-files(
+@mixin ff($font-name, $font-folder, $font-filename, $font-weight: normal, $font-style: normal){
+  @include font-face( $font-name, font-files(
   $font-folder + "/" + $font-filename + ".woff", woff,
   $font-folder + "/" + $font-filename + ".ttf", truetype, 
   $font-folder + "/" + $font-filename + ".svg", svg
@@ -144,12 +134,17 @@ $total-width: gridsystem-width($columns);
   }
 }
 
+// Font-Face
+//@include ff($font-name, $font-folder, $font-filename, $font-weight $font-style);
+
 // Base style
 html{
   height: 100%;
+  font-size: 62.5%;
 }
 body{
   @include font-smoothing;
+  @include font(14);
   width: 100%;
   height: 100%;
   min-height: 100%;
@@ -165,37 +160,35 @@ h1,h2,h3,h4,h5,h6{
   font-weight: 700;
 }
 h1{
-  @include adjust-font-size-to(3.157rem);
+  @include font(32);
 }
 h2{
-  @include adjust-font-size-to(2.369rem);
+  @include font(24);
 }
 h3{
-  @include adjust-font-size-to(1.777rem);
+  @include font(18);
 }
 h4{
-  @include adjust-font-size-to(1.333rem);
+  @include font(16);
 }
 h5{
-  @include adjust-font-size-to(1rem);
+  @include font(14);
 }
 h6{
-  @include adjust-font-size-to(0.75rem);
+  @include font(12);
 }
 
 img, iframe{
   max-width: 100%;
+  height: auto;
 }
 
 p{
-  @include margin-leader(0.5);
-  @include margin-trailer(0.5);
+  margin: 20px 0;
 }
 
 ul, ol{
-  @include margin-leader(0.5);
-  @include margin-trailer(0.5);
-  margin-left: 10px;
+  margin: 20px 0;
 }
 
 table{
