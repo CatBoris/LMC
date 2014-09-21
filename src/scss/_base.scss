@@ -81,12 +81,17 @@ $total-width: gridsystem-width($columns);
   }
 }
 
-@mixin ff($font-name, $font-folder, $font-filename, $font-weight: normal, $font-style: normal){
-  @include font-face( $font-name, font-files(
-  $font-folder + "/" + $font-filename + ".woff", woff,
-  $font-folder + "/" + $font-filename + ".ttf", truetype, 
-  $font-folder + "/" + $font-filename + ".svg", svg
-  ), $font-folder + "/" + $font-filename +".eot", $font-weight, $font-style);
+@mixin font-face($font-name, $font-folder, $font-filename, $font-weight: normal, $font-style: normal){
+  @font-face {
+    font-family: $font-name;
+    src: url('../fonts/' + $font-folder + '/' + $font-filename + '.eot');
+    src: url('../fonts/' + $font-folder + '/' + $font-filename + '.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/' + $font-folder + '/' + $font-filename + '.woff') format('woff'),
+         url('../fonts/' + $font-folder + '/' + $font-filename + '.ttf') format('truetype'),
+         url('../fonts/' + $font-folder + '/' + $font-filename + '.svg') format('svg');
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
 }
 
 @mixin font-smoothing($val: antialiased){
@@ -135,7 +140,7 @@ $total-width: gridsystem-width($columns);
 }
 
 // Font-Face
-//@include ff($font-name, $font-folder, $font-filename, $font-weight $font-style);
+//@include font-face($font-name, $font-folder, $font-filename, $font-weight $font-style);
 
 // Base style
 html{
