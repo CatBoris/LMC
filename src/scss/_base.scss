@@ -9,12 +9,12 @@ $columns: 12;
 
 // Variables
 //$icons: sprite-map("icons/*.png", $spacing: 10px, $layout: vertical);
-$total-width: gridsystem-width($columns);
 
-// Function
+// Grid
 @function gridsystem-width($columns:$columns){
   @return ($column-width * $columns) + ($gutter-width * $columns);
 }
+$total-width: gridsystem-width($columns);
 
 // Mixins
 @mixin clearfix(){
