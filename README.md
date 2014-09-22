@@ -103,6 +103,11 @@ Plugins
     category: "Кастомизация скролла",
     listPlugins: [
       {
+        title: "Baron",
+        link: "https://github.com/Diokuz/baron",
+        description: ""
+      },
+      {
         title: "Nicescroll",
         link: "https://github.com/inuyaksa/jquery.nicescroll",
         description: ""
