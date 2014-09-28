@@ -216,6 +216,11 @@ Sublime packages
     title: "SCSS",
     link: "https://github.com/MarioRicalde/SCSS.tmbundle",
     description: "Подсветка синтаксиса SCSS и автокомплит"
+  },
+  {
+    title: "GitGutter",
+    link: "https://github.com/jisaacks/GitGutter",
+    description: "Показывает изменения в сравнении с закомиченной версией"
   }
 ]
 
