@@ -241,6 +241,18 @@ http://placehold.it/${1:300}x${2:300}
 </snippet>
 ```
 
+**Lorempixel**
+
+```sh
+<snippet>
+  <content><![CDATA[
+http://lorempixel.com/${1:300}/${2:300}/${3}
+]]></content>
+  <tabTrigger>lp</tabTrigger>
+  <scope>text.html</scope>
+</snippet>
+```
+
 **Comments**
 
 ```sh
