@@ -283,6 +283,21 @@ http://lorempixel.com/${1:300}/${2:300}/${3}
 </snippet>
 ```
 
+**Function**
+
+```sh
+<snippet>
+  <content><![CDATA[
+function(${1}) {
+  ${2}
+}
+]]></content>
+  <tabTrigger>></tabTrigger>
+  <scope>source.js</scope>
+</snippet>
+```
+
+
 Sublime config
 ----------------
 ```sh
