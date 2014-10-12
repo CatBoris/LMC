@@ -1,0 +1,12 @@
+{
+  "name": "project",
+  "version": "0.1.0",
+  "devDependencies": {
+    "gemini": "^0.8.2"
+  },
+  "scripts": {
+    "phantomjs": "phantomjs --webdriver=4444",
+    "update": "gemini gather",
+    "test": "gemini test --reporter flat --reporter html"
+  }
+}

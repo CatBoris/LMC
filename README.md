@@ -216,6 +216,11 @@ Sublime packages
     title: "SCSS",
     link: "https://github.com/MarioRicalde/SCSS.tmbundle",
     description: "Подсветка синтаксиса SCSS и автокомплит"
+  },
+  {
+    title: "GitGutter",
+    link: "https://github.com/jisaacks/GitGutter",
+    description: "Показывает изменения в сравнении с закомиченной версией"
   }
 ]
 
@@ -232,6 +237,18 @@ Sublime snippets
 http://placehold.it/${1:300}x${2:300}
 ]]></content>
   <tabTrigger>ph</tabTrigger>
+  <scope>text.html</scope>
+</snippet>
+```
+
+**Lorempixel**
+
+```sh
+<snippet>
+  <content><![CDATA[
+http://lorempixel.com/${1:300}/${2:300}/${3}
+]]></content>
+  <tabTrigger>lp</tabTrigger>
   <scope>text.html</scope>
 </snippet>
 ```
@@ -265,6 +282,21 @@ http://placehold.it/${1:300}x${2:300}
 	<scope>text.html</scope>
 </snippet>
 ```
+
+**Function**
+
+```sh
+<snippet>
+  <content><![CDATA[
+function(${1}) {
+  ${2}
+}
+]]></content>
+  <tabTrigger>></tabTrigger>
+  <scope>source.js</scope>
+</snippet>
+```
+
 
 Sublime config
 ----------------
