@@ -291,6 +291,8 @@ http://lorempixel.com/${1:300}/${2:300}/${3}
 // ==============================
 // ${1}
 // ==============================
+
+${2}
 ]]></content>
   <tabTrigger>//</tabTrigger>
   <scope>source.js</scope>
