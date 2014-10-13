@@ -283,6 +283,20 @@ http://lorempixel.com/${1:300}/${2:300}/${3}
 </snippet>
 ```
 
+**Javascript comments**
+
+```sh
+<snippet>
+  <content><![CDATA[
+// ==============================
+// ${1}
+// ==============================
+]]></content>
+  <tabTrigger>//</tabTrigger>
+  <scope>source.js</scope>
+</snippet>
+```
+
 **Function**
 
 ```sh
