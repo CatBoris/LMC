@@ -1,5 +1,5 @@
 
-LMM Методология
+Template for LMM
 ===============
 > ***layout module modificator***
 
