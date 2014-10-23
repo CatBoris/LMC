@@ -1,10 +1,9 @@
 
 Template for LMM
 ===============
+
 > ***layout module modificator***
 
-> Принципом методологии является максимальная модульность, независимость
-> и переиспользование блоков верстки.
 
  - [Методология] (#structure)
  - [Javascript Plugins] (#plugins)
