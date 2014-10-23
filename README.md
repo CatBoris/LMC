@@ -145,6 +145,11 @@ Plugins
         title: "Swiper",
         link: "https://github.com/nolimits4web/Swiper",
         description: ""
+      },
+      {
+        title: "bxSlider",
+        link: "https://github.com/stevenwanderski/bxslider-4",
+        description: ""
       }
     ]
   },
