@@ -1,10 +1,9 @@
 
 Template for LMM
 ===============
+
 > ***layout module modificator***
 
-> Принципом методологии является максимальная модульность, независимость
-> и переиспользование блоков верстки.
 
  - [Методология] (#structure)
  - [Javascript Plugins] (#plugins)
@@ -145,6 +144,11 @@ Plugins
       {
         title: "Swiper",
         link: "https://github.com/nolimits4web/Swiper",
+        description: ""
+      },
+      {
+        title: "bxSlider",
+        link: "https://github.com/stevenwanderski/bxslider-4",
         description: ""
       }
     ]
