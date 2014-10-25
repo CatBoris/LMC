@@ -187,6 +187,11 @@ Sublime packages
     description: "Подсветка скобок и тэгов"
   },
   {
+    title: "JSHint Gutter",
+    link: "https://github.com/victorporof/Sublime-JSHint",
+    description: "Подсветка ошибок"
+  },
+  {
     title: "AutoFileName",
     link: "https://github.com/BoundInCode/AutoFileName",
     description: "Автокомплит для путей и файлов"
