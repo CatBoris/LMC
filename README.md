@@ -287,7 +287,7 @@ http://lorempixel.com/${1:300}/${2:300}/${3}
 </${2:div}>
 <!-- END $1 -->
 ]]></content>
-  <tabTrigger>di</tabTrigger>
+  <tabTrigger>do</tabTrigger>
   <scope>text.html</scope>
 </snippet>
 ```
@@ -301,8 +301,20 @@ http://lorempixel.com/${1:300}/${2:300}/${3}
   $3
 </${2:div}> <!-- end $1 -->
 ]]></content>
-  <tabTrigger>do</tabTrigger>
+  <tabTrigger>di</tabTrigger>
   <scope>text.html</scope>
+</snippet>
+```
+
+**Include**
+
+```sh
+<snippet>
+  <content><![CDATA[
+@include ${1}
+]]></content>
+  <tabTrigger>icn</tabTrigger>
+  <scope>source.scss</scope>
 </snippet>
 ```
 
