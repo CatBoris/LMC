@@ -140,6 +140,25 @@ $total-width: gridsystem-width($columns);
     border-color: transparent transparent transparent $background;
   }
 }
+@mixin opacity($opacity){
+  .ie8 & {
+    filter:alpha(opacity= ($opacity * 100) );
+    zoom: 1;
+  }
+  opacity: ($opacity)
+}
+
+@mixin rgba($color, $alpha) {
+  $rgba: rgba($color, $alpha);
+  $ie-hex-str: ie-hex-str($rgba);
+  .ie8 & {
+    background-color: transparent;
+    background-color: $rgba;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex-str},endColorstr=#{$ie-hex-str});
+    zoom: 1;
+  }
+  background: rgba($color, $alpha);
+}
 
 // Font-Face
 //@include font-face($font-name, $font-folder, $font-filename, $font-weight, $font-style);
