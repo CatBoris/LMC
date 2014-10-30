@@ -1,9 +1,11 @@
 {
   "name": "project",
   "version": "0.1.0",
-  "devDependencies": {
-    "gemini": "^0.8.2"
+  "dependencies": {
+    "gemini": "^0.8.2",
+    "phantomjs": "^1.9.12",
   },
+  "devDependencies": {},
   "scripts": {
     "phantomjs": "phantomjs --webdriver=4444",
     "update": "gemini gather",
