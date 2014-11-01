@@ -1,0 +1,122 @@
+//$icons: sprite-map("icons/*.png", $spacing: 10px, $layout: vertical);
+
+@mixin icon($icon-name, $content: true, $position: absolute){
+  @if $content == true {
+    content: "";
+  }
+  position: $position;
+  display: inline-block;
+  background-image: sprite-url($icons);
+  background-position: sprite-position($icons, $icon-name);
+  @include sprite-dimensions($icons, $icon-name);
+}
+
+@mixin clearfix(){
+  &:before,
+  &:after {
+      content:"";
+      display:table;
+  }
+  &:after {
+      clear:both;
+  }
+}
+
+@mixin placeholder{
+  &::-webkit-input-placeholder {@content;}
+  &:-moz-placeholder           {@content;}
+  &::-moz-placeholder          {@content;}
+  &:-ms-input-placeholder      {@content;}
+  &::placeholder               {@content;}
+}
+
+@mixin font($font-size, $line-height){
+  font-size: $font-size + px;
+  font-size: $font-size / 10 + rem;
+  line-height: $line-height + px;
+  line-height: $line-height / 10 + rem;
+}
+
+@mixin media($media-width){
+  @media screen and (max-width: $media-width){
+    @content;
+  }
+}
+
+@mixin font-face($font-name, $font-folder, $font-filename, $font-weight: normal, $font-style: normal){
+  @font-face {
+    font-family: $font-name;
+    src: url('../fonts/' + $font-folder + '/' + $font-filename + '.eot');
+    src: url('../fonts/' + $font-folder + '/' + $font-filename + '.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/' + $font-folder + '/' + $font-filename + '.woff') format('woff'),
+         url('../fonts/' + $font-folder + '/' + $font-filename + '.ttf') format('truetype'),
+         url('../fonts/' + $font-folder + '/' + $font-filename + '.svg') format('svg');
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+}
+
+@mixin font-smoothing($val: antialiased){
+  -webkit-font-smoothing: $val;
+  -moz-font-smoothing: $val;
+  -ms-font-smoothing: $val;
+  -o-font-smoothing: $val;
+}
+
+@mixin arrow($width, $height, $background, $direction){
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  @if $direction == top{
+    border-width: 0 $width / 2 + px $height + px $width / 2 + px;
+    border-color: transparent transparent $background transparent;
+  }
+  @if $direction == right{
+    border-width: $height / 2 + px 0 $height / 2 + px $width + px;
+    border-color: transparent transparent transparent $background;
+  }
+  @if $direction == bottom{
+    border-width: $height + px $width / 2 + px 0 $width / 2 + px;
+    border-color: $background transparent transparent transparent;
+  }
+  @if $direction == left{
+    border-width: $height / 2 + px $width + px $height / 2 + px 0;
+    border-color: transparent $background transparent transparent;
+  }
+  @if $direction == top-left{
+    border-width: $height + px $width + px 0 0;
+    border-color: $background transparent transparent transparent;
+  }
+  @if $direction == top-right{
+    border-width: 0 $width + px $height + px 0;
+    border-color: transparent $background transparent transparent;
+  }
+  @if $direction == bottom-right{
+    border-width: 0 0 $height + px $width + px;
+    border-color: transparent transparent $background transparent;
+  }
+  @if $direction == bottom-left{
+    border-width: $width + px 0 0 $height + px;
+    border-color: transparent transparent transparent $background;
+  }
+}
+
+@mixin opacity($opacity){
+  .ie8 & {
+    filter:alpha(opacity= ($opacity * 100) );
+    zoom: 1;
+  }
+  opacity: ($opacity)
+}
+
+@mixin rgba($color, $alpha) {
+  $rgba: rgba($color, $alpha);
+  $ie-hex-str: ie-hex-str($rgba);
+  .ie8 & {
+    background-color: transparent;
+    background-color: $rgba;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex-str},endColorstr=#{$ie-hex-str});
+    zoom: 1;
+  }
+  background: rgba($color, $alpha);
+}
