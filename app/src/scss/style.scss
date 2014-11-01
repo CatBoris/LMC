@@ -1,10 +1,14 @@
 @charset "utf-8";
 
 @import 'compass';
-@import 'compass/reset';
-
 @import 'grid';
 @import 'mixins';
+
+/* ============================== */
+/* RESET */ 
+/* ============================== */
+
+@import 'compass/reset';
 
 /* ============================== */
 /* BASE */ 
