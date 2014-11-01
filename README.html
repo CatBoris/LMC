@@ -1,0 +1,276 @@
+<h1 id="template-for-lmm">Template for LMM</h1>
+<blockquote>
+<p><strong><em>layout module modificator</em></strong></p>
+</blockquote>
+<ul>
+<li>[Методология] (#structure)</li>
+<li>[Javascript Plugins] (#plugins)</li>
+<li>[Sublime text] (#sublime)</li>
+</ul>
+<h2 id="structure">Structure</h2>
+<ul>
+<li>Базовый слой (base)</li>
+<li>Слой разметки (layout)</li>
+<li>Слой модулей (module)</li>
+<li>Модификации</li>
+</ul>
+<p><img src="https://dl.dropboxusercontent.com/u/80313909/github/flat.png" alt=""></p>
+<h2 id="base">Base</h2>
+<p>  Основные правила для этого слоя:</p>
+<ul>
+<li>сбросы стилей ( normalize, reset, etc. );</li>
+<li>конфигураци, миксины, функции, переменные sass и compass</li>
+<li>стили для общих элементов без классов и id ( html, body, a, ul, etc. );</li>
+</ul>
+<p><img src="https://dl.dropboxusercontent.com/u/80313909/github/base.png" alt=""></p>
+<h2 id="layout">Layout</h2>
+<p>  Основные правила для этого слоя:</p>
+<ul>
+<li>стили для общей разметки и сетки страницы ( .l-header, .l-col_12, .l-aside,
+  etc. ).</li>
+<li>классы начинаются с префикса &quot;.l-&quot;;</li>
+</ul>
+<p><img src="https://dl.dropboxusercontent.com/u/80313909/github/layout.png" alt=""></p>
+<h2 id="module">Module</h2>
+<p>  Основные правила для этого слоя:</p>
+<ul>
+<li>стили для абсолютно независимых блоков, которые могу в себе содержать другие модули и подмодули;</li>
+<li>классы начинаются с префикса &quot;.m-&quot;;</li>
+<li>имя модуля состоящего из более чем 1-го слова разделяются
+  символом тире &quot;-&quot; ( .m-reg-form, .m-shopping-cart, etc. );</li>
+</ul>
+<p><img src="https://dl.dropboxusercontent.com/u/80313909/github/module.png" alt=""></p>
+<h2 id="sub-module">Sub-module</h2>
+<ul>
+<li>имя подмодуля составляется из имени модуля + символ нижнего подчеркивания &quot;_&quot; + имя подмодуля (.m-form_item)</li>
+</ul>
+<p><img src="https://dl.dropboxusercontent.com/u/80313909/github/component.png" alt=""></p>
+<h2 id="modification">Modification</h2>
+<ul>
+<li>добавляет дополнительные свойства для общих элементов layout и module</li>
+<li>классы начинаются с префикса &quot;.__&quot;;</li>
+</ul>
+<p><img src="https://dl.dropboxusercontent.com/u/80313909/github/all.png" alt=""></p>
+<h1 id="plugins">Plugins</h1>
+<pre><code class="lang-sh">
+[
+  {
+    category: &quot;Загрузка ресурсов&quot;,
+    listPlugins: [
+      {
+        title: &quot;Head.js&quot;,
+        link: &quot;https://github.com/headjs/headjs&quot;,
+        description: &quot;&quot;
+      }
+    ]
+  },
+  {
+    category: &quot;Стилизация форм&quot;,
+    listPlugins: [
+      {
+        title: &quot;jQueryFormStyler&quot;,
+        link: &quot;https://github.com/Dimox/jQueryFormStyler&quot;,
+        description: &quot;&quot;
+      }
+    ]
+  },
+  {
+    category: &quot;Кастомизация скролла&quot;,
+    listPlugins: [
+      {
+        title: &quot;Baron&quot;,
+        link: &quot;https://github.com/Diokuz/baron&quot;,
+        description: &quot;&quot;
+      },
+      {
+        title: &quot;Nicescroll&quot;,
+        link: &quot;https://github.com/inuyaksa/jquery.nicescroll&quot;,
+        description: &quot;&quot;
+      }
+    ]
+  },
+  {
+    category: &quot;Скролл эффекты&quot;,
+    listPlugins: [
+      {
+        title: &quot;Scroolly&quot;,
+        link: &quot;https://github.com/chayka/jQuery.Scroolly&quot;,
+        description: &quot;&quot;
+      }
+    ]
+  },
+  {
+    category: &quot;Датапикеры&quot;,
+    listPlugins: [
+      {
+        title: &quot;Pikaday&quot;,
+        link: &quot;https://github.com/dbushell/Pikaday&quot;,
+        description: &quot;&quot;
+      },
+      {
+        title: &quot;Pikadate&quot;,
+        link: &quot;https://github.com/amsul/pickadate.js&quot;,
+        description: &quot;ie9+&quot;
+      }
+    ]
+  },
+  {
+    category: &quot;Слайдеры&quot;,
+    listPlugins: [
+      {
+        title: &quot;Swiper&quot;,
+        link: &quot;https://github.com/nolimits4web/Swiper&quot;,
+        description: &quot;&quot;
+      },
+      {
+        title: &quot;bxSlider&quot;,
+        link: &quot;https://github.com/stevenwanderski/bxslider-4&quot;,
+        description: &quot;&quot;
+      }
+    ]
+  },
+  {
+    category: &quot;Рейтинги&quot;,
+    listPlugins: [
+      {
+        title: &quot;Raty&quot;,
+        link: &quot;https://github.com/wbotelhos/raty&quot;,
+        description: &quot;&quot;
+      }
+    ]
+  }
+]
+</code></pre>
+<h1 id="sublime">Sublime</h1>
+<h2 id="sublime-packages">Sublime packages</h2>
+<pre><code class="lang-sh">
+[
+  {
+    title: &quot;Emmet&quot;,
+    link: &quot;https://github.com/sergeche/emmet-sublime&quot;,
+    description: &quot;Ускорение работы с HTML и CSS&quot;
+  },
+  {
+    title: &quot;BracketHighlighter&quot;,
+    link: &quot;https://github.com/facelessuser/BracketHighlighter&quot;,
+    description: &quot;Подсветка скобок и тэгов&quot;
+  },
+  {
+    title: &quot;JSHint Gutter&quot;,
+    link: &quot;https://github.com/victorporof/Sublime-JSHint&quot;,
+    description: &quot;Подсветка ошибок&quot;
+  },
+  {
+    title: &quot;AutoFileName&quot;,
+    link: &quot;https://github.com/BoundInCode/AutoFileName&quot;,
+    description: &quot;Автокомплит для путей и файлов&quot;
+  },
+  {
+    title: &quot;Nettuts-Fetch&quot;,
+    link: &quot;https://github.com/weslly/Nettuts-Fetch&quot;,
+    description: &quot;Скачивание файлов с удаленного репозитория&quot;
+  },
+  {
+    title: &quot;SideBarEnhancements&quot;,
+    link: &quot;https://github.com/titoBouzout/SideBarEnhancements&quot;,
+    description: &quot;Расширяет функционал боковой панели&quot;
+  },
+  {
+    title: &quot;SublimeGit&quot;,
+    link: &quot;https://sublimegit.net&quot;,
+    description: &quot;Интеграция гита в sublime&quot;
+  },
+  {
+    title: &quot;theme-spacegray&quot;,
+    link: &quot;https://github.com/kkga/spacegray&quot;,
+    description: &quot;Тема для sublime text&quot;
+  },
+  {
+    title: &quot;LiveStyle&quot;,
+    link: &quot;http://livestyle.emmet.io&quot;,
+    description: &quot;Двунаправленное редактирование css&quot;
+  },
+  {
+    title: &quot;SCSS&quot;,
+    link: &quot;https://github.com/MarioRicalde/SCSS.tmbundle&quot;,
+    description: &quot;Подсветка синтаксиса SCSS и автокомплит&quot;
+  },
+  {
+    title: &quot;GitGutter&quot;,
+    link: &quot;https://github.com/jisaacks/GitGutter&quot;,
+    description: &quot;Показывает изменения в сравнении с закомиченной версией&quot;
+  }
+]
+</code></pre>
+<h2 id="sublime-snippets">Sublime snippets</h2>
+<p><strong>Placehold.it</strong></p>
+<pre><code class="lang-sh">&lt;snippet&gt;
+  &lt;content&gt;&lt;![CDATA[
+http://placehold.it/${1:300}x${2:300}
+]]&gt;&lt;/content&gt;
+  &lt;tabTrigger&gt;ph&lt;/tabTrigger&gt;
+  &lt;scope&gt;text.html&lt;/scope&gt;
+&lt;/snippet&gt;
+</code></pre>
+<p><strong>Lorempixel</strong></p>
+<pre><code class="lang-sh">&lt;snippet&gt;
+  &lt;content&gt;&lt;![CDATA[
+http://lorempixel.com/${1:300}/${2:300}/${3}
+]]&gt;&lt;/content&gt;
+  &lt;tabTrigger&gt;lp&lt;/tabTrigger&gt;
+  &lt;scope&gt;text.html&lt;/scope&gt;
+&lt;/snippet&gt;
+</code></pre>
+<p><strong>Comments</strong></p>
+<pre><code class="lang-sh">&lt;snippet&gt;
+  &lt;content&gt;&lt;![CDATA[
+&lt;${2:div} class=&quot;$1&quot;&gt;
+  $3
+&lt;/${2:div}&gt; &lt;!-- end $1 --&gt;
+]]&gt;&lt;/content&gt;
+  &lt;tabTrigger&gt;di&lt;/tabTrigger&gt;
+  &lt;scope&gt;text.html&lt;/scope&gt;
+&lt;/snippet&gt;
+</code></pre>
+<p><strong>Include</strong></p>
+<pre><code class="lang-sh">&lt;snippet&gt;
+  &lt;content&gt;&lt;![CDATA[
+@include ${1}
+]]&gt;&lt;/content&gt;
+  &lt;tabTrigger&gt;icn&lt;/tabTrigger&gt;
+  &lt;scope&gt;source.scss&lt;/scope&gt;
+&lt;/snippet&gt;
+</code></pre>
+<p><strong>Javascript comments</strong></p>
+<pre><code class="lang-sh">&lt;snippet&gt;
+  &lt;content&gt;&lt;![CDATA[
+// ==============================
+// ${1}
+// ==============================
+
+${2}
+]]&gt;&lt;/content&gt;
+  &lt;tabTrigger&gt;//&lt;/tabTrigger&gt;
+  &lt;scope&gt;source.js&lt;/scope&gt;
+&lt;/snippet&gt;
+</code></pre>
+<p><strong>Function</strong></p>
+<pre><code class="lang-sh">&lt;snippet&gt;
+  &lt;content&gt;&lt;![CDATA[
+function(${1}) {
+  ${2}
+}
+]]&gt;&lt;/content&gt;
+  &lt;tabTrigger&gt;&gt;&lt;/tabTrigger&gt;
+  &lt;scope&gt;source.js&lt;/scope&gt;
+&lt;/snippet&gt;
+</code></pre>
+<h2 id="sublime-config">Sublime config</h2>
+<pre><code class="lang-sh">{
+    &quot;draw_white_space&quot;: &quot;all&quot;,
+    &quot;translate_tabs_to_spaces&quot;: true,
+    &quot;tab_size&quot;: 2,
+    &quot;ignored_packages&quot;:[],
+    &quot;theme&quot;: &quot;Spacegray.sublime-theme&quot;
+}
+</code></pre>

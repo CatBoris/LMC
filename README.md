@@ -267,36 +267,6 @@ http://lorempixel.com/${1:300}/${2:300}/${3}
 ```sh
 <snippet>
   <content><![CDATA[
-<!-- BEGIN $1 -->
-  $2
-<!-- END $1 -->
-]]></content>
-  <tabTrigger>co</tabTrigger>
-  <scope>text.html</scope>
-</snippet>
-```
-
-**Comments layout**
-
-```sh
-<snippet>
-  <content><![CDATA[
-<!-- BEGIN $1 -->
-<${2:div} class="$1">
-  $3
-</${2:div}>
-<!-- END $1 -->
-]]></content>
-  <tabTrigger>do</tabTrigger>
-  <scope>text.html</scope>
-</snippet>
-```
-
-**Comments module**
-
-```sh
-<snippet>
-  <content><![CDATA[
 <${2:div} class="$1">
   $3
 </${2:div}> <!-- end $1 -->
