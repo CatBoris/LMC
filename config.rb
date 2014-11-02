@@ -20,6 +20,10 @@ line_comments = false
 on_stylesheet_saved do |file|
   css = File.read(file)
   File.open(file, 'w') do |io|
-    io << AutoprefixerRails.process(css, browsers: ['last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 2'])
+    io << AutoprefixerRails.process(css,
+      map: File.read(css_dir + '/style.css.map'),
+      from: sass_dir + '/style.scss',
+      to: css_dir + '/style.css',
+      browsers: ['last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 2'])
   end
 end
