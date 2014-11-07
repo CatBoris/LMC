@@ -479,4 +479,26 @@ ol {
             box-shadow: none;
     color: #888; }
 
+.l-header {
+  background: #000; }
+
+.m-gallery {
+  padding: 20px; }
+
+.m-btn {
+  color: red; }
+  .m-btn.__blue {
+    color: blue; }
+
+.l-header {
+  background: #000; }
+
+.m-gallery {
+  padding: 20px; }
+
+.m-btn {
+  color: red; }
+  .m-btn.__blue {
+    color: blue; }
+
 /*# sourceMappingURL=style.css.map */

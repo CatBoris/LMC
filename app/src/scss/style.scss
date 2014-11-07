@@ -27,3 +27,29 @@
 /* ============================== */
 
 @import 'module';
+
+@include layout(header) {
+  background: #000;
+}
+@include module(gallery) {
+  padding: 20px;
+}
+@include module(btn) {
+  color: red;
+  @include modificator(blue) {
+    color: blue;
+  }
+}
+
+.l-header {
+  background: #000;
+}
+.m-gallery {
+  padding: 20px;
+}
+.m-btn {
+  color: red;
+  &.__blue {
+    color: blue;
+  }
+}

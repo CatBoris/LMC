@@ -120,3 +120,21 @@
   }
   background: rgba($color, $alpha);
 }
+
+@mixin layout($name){
+  .l-#{$name}{
+    @content;
+  }
+}
+
+@mixin module($name){
+  .m-#{$name}{
+    @content;
+  }
+}
+
+@mixin modificator($name){
+  &.__#{$name}{
+    @content;
+  }
+}
