@@ -133,6 +133,12 @@
   }
 }
 
+@mixin sub-module($name){
+  &_#{$name}{
+    @content;
+  }
+}
+
 @mixin modificator($name){
   &.__#{$name}{
     @content;
