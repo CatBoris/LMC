@@ -1,14 +1,16 @@
 {
   "name": "project",
-  "version": "0.1.0",
-  "dependencies": {
-    "gemini": "^0.8.2",
-    "phantomjs": "^1.9.12",
-  },
-  "devDependencies": {},
+  "version": "1.0.0",
   "scripts": {
     "phantomjs": "phantomjs --webdriver=4444",
     "update": "gemini gather",
     "test": "gemini test --reporter flat --reporter html"
+  },
+  "dependencies": {
+    "gemini": "^0.8.2",
+    "gulp": "^3.8.10",
+    "gulp-watch": "^1.1.0",
+    "gulp.spritesmith": "^1.4.0",
+    "phantomjs": "^1.9.12"
   }
 }
