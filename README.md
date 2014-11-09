@@ -391,22 +391,24 @@ Sublime config
 Testing
 ========
 
+Установка зависимостей
+
 ```sh
-npn install
+npm install
 ```
 
 Запуск PhantomJS
 
 ```sh
-npn run phantomjs
+npm run phantomjs
 ```
 
-Сделать эталонные скриншоты
+Создание эталонных скриншотов
 ```sh
-npn run update
+npm run update
 ```
 
 Тестирование
 ```sh
-npn run test
+npm run test
 ```
