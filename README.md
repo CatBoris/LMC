@@ -402,7 +402,7 @@ npm install
 ```sh
 npm run phantomjs
 ```
-
+Описание тестов в файлах *.test.js в папке gemini.
 Создание эталонных скриншотов
 ```sh
 npm run update
