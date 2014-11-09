@@ -8,6 +8,7 @@ Template for LMM
  - [Методология] (#structure)
  - [Javascript Plugins] (#plugins)
  - [Sublime text] (#sublime)
+ - [Тестирование] (#testing)
 
 Structure
 ---------
@@ -386,4 +387,26 @@ Sublime config
 	"theme": "Spacegray.sublime-theme"
 }
 
+```
+Testing
+========
+
+```sh
+npn install
+```
+
+Запуск PhantomJS
+
+```sh
+npn run phantomjs
+```
+
+Сделать эталонные скриншоты
+```sh
+npn run update
+```
+
+Тестирование
+```sh
+npn run test
 ```
