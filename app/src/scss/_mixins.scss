@@ -139,7 +139,7 @@
   }
 }
 
-@mixin modificator($name){
+@mixin modifier($name){
   &.__#{$name}{
     @content;
   }

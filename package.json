@@ -4,7 +4,7 @@
   "scripts": {
     "phantomjs": "phantomjs --webdriver=4444",
     "update": "gemini gather",
-    "test": "gemini test --reporter flat --reporter html"
+    "test": "gemini test --reporter flat --reporter html",
   },
   "dependencies": {
     "gemini": "^0.8.2",

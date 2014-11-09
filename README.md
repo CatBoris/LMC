@@ -2,7 +2,7 @@
 Template for LMM
 ===============
 
-> ***layout module modificator***
+> ***layout module modifier***
 
 
  - [Методология] (#structure)
@@ -60,7 +60,7 @@ Sub-module
 ![](https://dl.dropboxusercontent.com/u/80313909/github/component.png)
 
 
-Modification
+Modifier
 ------------
 
   - добавляет дополнительные свойства для общих элементов layout и module
@@ -237,6 +237,62 @@ Sublime packages
 
 Sublime snippets
 ----------------
+
+**layout.sublime-snippet**
+
+```sh
+<snippet>
+  <content><![CDATA[
+@include layout(${1}) {
+  ${2}
+}
+]]></content>
+  <tabTrigger>il</tabTrigger>
+  <scope>source.scss</scope>
+</snippet>
+
+```
+**module.sublime-snippet**
+
+```sh
+<snippet>
+  <content><![CDATA[
+@include module(${1}) {
+  ${2}
+}
+]]></content>
+  <tabTrigger>im</tabTrigger>
+  <scope>source.scss</scope>
+</snippet>
+
+```
+**sub-module.sublime-snippet**
+
+```sh
+<snippet>
+  <content><![CDATA[
+@include sub-module(${1}) {
+  ${2}
+}
+]]></content>
+  <tabTrigger>is</tabTrigger>
+  <scope>source.scss</scope>
+</snippet>
+
+```
+**modifier.sublime-snippet**
+
+```sh
+<snippet>
+  <content><![CDATA[
+@include modifier(${1}) {
+  ${2}
+}
+]]></content>
+  <tabTrigger>mm</tabTrigger>
+  <scope>source.scss</scope>
+</snippet>
+```
 
 **Placehold.it**
 
